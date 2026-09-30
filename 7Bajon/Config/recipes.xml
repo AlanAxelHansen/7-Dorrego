@@ -1,0 +1,64 @@
+<configs>
+    <append xpath="/recipes">
+
+        <!-- Tortilla de Dorrego -->
+        <recipe name="foodTortillaDorrego" count="1" craft_time="40" craft_area="campfire" craft_tool="toolCookingGrill">
+            <ingredient name="foodCropPotato" count="3"/>
+            <ingredient name="foodEgg" count="2"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <!-- Receta Tortilla del Pibe (Más cara: muchas papas y más huevos) -->
+        <recipe name="foodTortillaDelPibe" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingGrill">
+            <ingredient name="foodCropPotato" count="4"/>
+            <ingredient name="foodEgg" count="3"/>
+            <ingredient name="resourceAnimalFat" count="2"/>
+        </recipe>
+
+        <!-- Receta Pizzas -->
+        <recipe name="foodPizzaCasera" count="2" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill">
+            <ingredient name="foodCornMeal" count="3"/>
+            <ingredient name="foodRawMeat" count="2"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <!-- Receta Guiso Blanco -->
+        <recipe name="foodGuisoBlanco" count="1" craft_time="50" craft_area="campfire" craft_tool="toolCookingPot">
+            <ingredient name="foodCornMeal" count="2"/>
+            <ingredient name="foodRawMeat" count="2"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <!-- Receta Pollo al Disco -->
+        <recipe name="foodPolloAlDisco" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
+            <ingredient name="foodRawMeat" count="4"/>
+            <ingredient name="foodCropPotato" count="2"/>
+            <ingredient name="drinkJarBeer" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <!-- Receta Budin -->
+        <recipe name="foodBudinFristelser" count="2" craft_time="35" craft_area="campfire" craft_tool="toolCookingPot">
+            <ingredient name="foodCropBlueberries" count="5"/>
+            <ingredient name="foodCornMeal" count="2"/>
+            <ingredient name="foodEgg" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <!-- Receta Crack -->
+        <recipe name="drugCrack" count="1" craft_time="20" craft_area="chemistryStation">
+            <ingredient name="resourcePotassiumNitratePowder" count="15"/>
+            <ingredient name="resourceCoal" count="10"/>
+            <ingredient name="ammoGasCan" count="10"/>
+        </recipe>
+
+        <!-- Receta Coca -->
+        <recipe name="drugCoca" count="1" craft_time="30" craft_area="chemistryStation">
+            <ingredient name="resourcePotassiumNitratePowder" count="25"/>
+            <ingredient name="resourceCropChrysanthemumPlant" count="10"/>
+            <ingredient name="ammoGasCan" count="40"/>
+        </recipe>
+
+    </append>
+</configs>

@@ -1,0 +1,208 @@
+<configs>
+    <append xpath="/items">
+
+        <!-- TORTILLA DE DORREGO -->
+        <item name="foodTortillaDorrego">
+            <property name="Extends" value="foodBaconAndEggs"/>
+            <property name="CustomIcon" value="TortillaDorrego"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="45"/>
+            <property name="DisplayType" value="foodWater"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="30"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="15"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodTortillaDorrego"/>
+                <display_value name="dSmellUse" value="30"/>
+            </effect_group>
+        </item>
+
+        <!-- TORTILLA DEL PIBE -->
+        <item name="foodTortillaDelPibe">
+            <property name="Extends" value="foodBaconAndEggs"/>
+            <property name="CustomIcon" value="TortillaPibe"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="65"/>
+            <property name="DisplayType" value="foodWater"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="40"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-20"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodTortillaDelPibe"/>
+                <display_value name="dSmellUse" value="40"/>
+            </effect_group>
+        </item>
+
+        <!-- PIZZAS CASERAS -->
+        <item name="foodPizzaCasera">
+            <property name="Extends" value="foodBaconAndEggs"/>
+            <property name="CustomIcon" value="PizzasAlan"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="14"/>
+            <property name="EconomicValue" value="35"/>
+            <property name="DisplayType" value="food"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="25"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodPizzaCasera"/>
+                <display_value name="dSmellUse" value="25"/>
+            </effect_group>
+        </item>
+
+        <!-- GUISO BLANCO -->
+        <item name="foodGuisoBlanco">
+            <property name="Extends" value="foodShamChowder"/>
+            <property name="CustomIcon" value="GuisoBlanco"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="50"/>
+            <property name="DisplayType" value="foodWater"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="50"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="40"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodGuisoBlanco"/>
+                <display_value name="dSmellUse" value="50"/>
+            </effect_group>
+        </item>
+
+        <!-- POLLO AL DISCO -->
+        <item name="foodPolloAlDisco">
+            <property name="Extends" value="foodShamChowder"/>
+            <property name="CustomIcon" value="PolloAlDisco"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="80"/>
+            <property name="DisplayType" value="foodWater"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="60"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="60"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodPolloAlDisco"/>
+                <display_value name="dSmellUse" value="60"/>
+            </effect_group>
+        </item>
+
+        <!-- BUDIN FRISTELSER -->
+        <item name="foodBudinFristelser">
+            <property name="Extends" value="foodBaconAndEggs"/>
+            <property name="CustomIcon" value="BudinFristelser"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="30"/>
+            <property name="DisplayType" value="food"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="2.1"/>
+                <property name="Sound_start" value="player_eating"/>
+                <property name="SmellUse" value="15"/>
+            </property_class>
+
+            <effect_group tiered="false" name="Food Tier 1">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodBudinFristelser"/>
+                <display_value name="dSmellUse" value="15"/>
+            </effect_group>
+        </item>
+
+        <!-- CRACK -->
+        <item name="drugCrack">
+            <property name="Extends" value="medicalSplint"/>
+            <property name="CustomIcon" value="Crack"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="100"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Sound_start" value="player_pain"/>
+            </property_class>
+
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCrackHigh"/>
+                <display_value name="Duration" value="180"/>
+            </effect_group>
+        </item>
+
+        <!-- COCA -->
+        <item name="drugCoca">
+            <property name="Extends" value="medicalSplint"/>
+            <property name="CustomIcon" value="Coca"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="HoldType" value="31"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="150"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Eat"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Sound_start" value="player_pain"/>
+            </property_class>
+
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCocaHigh"/>
+                <display_value name="Duration" value="120"/>
+            </effect_group>
+        </item>
+
+    </append>
+</configs>

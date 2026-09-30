@@ -1,0 +1,44 @@
+<configs>
+
+    <!-- MIRA REFLEX -->
+    <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+
+        <item_property_overrides name="gunHalcon">
+            <property name="ScopeCameraOffset" value=".0004,-.0374,0"/>
+            <property name="CrosshairOnAim" value="false"/>
+            <property name="CrosshairUpAfterShot" value="false"/>
+        </item_property_overrides>
+
+        <item_property_overrides name="gunFAL">
+            <property name="ScopeCameraOffset" value="0.0005,-0.019,0.2"/>
+            <property name="CrosshairOnAim" value="false"/>
+            <property name="CrosshairUpAfterShot" value="false"/>
+        </item_property_overrides>
+
+        <item_property_overrides name="gunThompson777">
+            <property name="ScopeCameraOffset" value="0,-.0125,0"/>
+            <property name="CrosshairOnAim" value="false"/>
+            <property name="CrosshairUpAfterShot" value="false"/>
+        </item_property_overrides>
+
+    </append>
+
+    <!-- CARGADOR EXTENDIDO NORMAL -->
+    <append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+        <item_property_overrides name="gunThompson777">
+            <effect_group tiered="false">
+                <passive_effect name="MagazineSize" operation="perc_add" value=".74"/>
+            </effect_group>
+        </item_property_overrides>
+    </append>
+
+    <!-- CARGADOR DE TAMBOR -->
+    <append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">
+        <item_property_overrides name="gunThompson777">
+            <effect_group tiered="false">
+                <passive_effect name="MagazineSize" operation="perc_add" value="1.85"/>
+            </effect_group>
+        </item_property_overrides>
+    </append>
+
+</configs>

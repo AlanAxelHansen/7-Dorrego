@@ -1,0 +1,476 @@
+<configs>
+    <append xpath="/items">
+
+        <!-- HALCON -->
+        <item name="gunHalcon">
+            <property name="Extends" value="gunHandgunT3SMG5"/>
+            <property name="CustomIcon" value="Halcon"/>
+            <property name="EconomicValue" value="4200"/>
+            <property name="TintColor" value="90, 85, 80"/>
+
+            <effect_group>
+                <!-- Disparo y stats-->
+                <passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="24"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="9"/>
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="430"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="18"/>
+                <passive_effect name="MaxRange" operation="base_set" value="55"/>
+                <passive_effect name="DamageFalloffRange" operation="base_set" value="24"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="650"/>
+
+                <!-- Recoil -->
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.95"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.95"/>
+                <passive_effect name="KickDegreesVerticalMin" operation="base_set" value="1.2"/>
+                <passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2.1"/>
+                <passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-0.8"/>
+                <passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0.8"/>
+            </effect_group>
+        </item>
+
+        <!-- BERSA -->
+        <item name="gunBersa">
+            <property name="Extends" value="gunHandgunT1Pistol"/>
+            <property name="CustomIcon" value="Bersa"/>
+            <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+            <property name="TintColor" value="60, 60, 65"/>
+            <property name="EconomicValue" value="2300"/>
+
+            <effect_group>
+                <!-- Disparo y stats-->
+                <passive_effect name="EntityDamage" operation="base_set" value="43"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="7"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="11"/>
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="210"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.15"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="420"/>
+                <passive_effect name="MaxRange" operation="base_set" value="45"/>
+                <passive_effect name="DamageFalloffRange" operation="base_set" value="24"/>
+
+                <!-- Recoil -->
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.2"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.2"/>
+                <passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".55"/>
+                <passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".65"/>
+                <passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.18"/>
+                <passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".28"/>
+            </effect_group>
+        </item>
+
+        <!-- FAL -->
+        <item name="gunFAL">
+            <property name="Extends" value="gunMGT2TacticalAR"/>
+            <property name="CustomIcon" value="Fal"/>
+            <property name="TintColor" value="40, 40, 45"/>
+            <property name="EconomicValue" value="6200"/>
+
+            <effect_group>
+                <!-- Disparo y stats -->
+                <passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="44"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="12"/>
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="20"/>
+                <passive_effect name="MaxRange" operation="base_set" value="105"/>
+                <passive_effect name="DamageFalloffRange" operation="base_set" value="55"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="850"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".9"/>
+
+                <!-- Recoil -->
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.4"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.4"/>
+                <passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2.2"/>
+                <passive_effect name="KickDegreesVerticalMax" operation="base_set" value="3.6"/>
+                <passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1.5"/>
+                <passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1.5"/>
+            </effect_group>
+        </item>
+
+        <!-- ==================== ARMAS VILLERAS ==================== -->
+
+        <!-- TUMBERA -->
+        <!-- ESCOPETA TUMBERA 777 -->
+        <item name="gunTumbera777">
+            <property name="Extends" value="gunShotgunT0PipeShotgun"/>
+            <property name="CustomIcon" value="Tumbera"/>
+            <property name="ShowQuality" value="false"/>
+            <property name="QualityMin" value="1"/>
+            <property name="QualityMax" value="1"/>
+            <property name="RepairTools" value=""/>
+            <property name="EconomicValue" value="77"/>
+            <property name="DegradationBreaksAfter" value="true"/>
+            <property name="Tags" value="weapon,ranged,shotgun,magazine,firingMode,attFortitude,perkBoomstick"/>
+
+            <property class="Action0">
+                <property name="Class" value="Ranged"/>
+                <property name="Magazine_items" value="ammoBalasTruchas"/>
+                <property name="Reload_time" value="1.8"/>
+            </property>
+
+            <effect_group>
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="77"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="1"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="77"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="4"/>
+                <passive_effect name="KickDegreesVerticalMin" operation="base_set" value="7"/>
+                <passive_effect name="KickDegreesVerticalMax" operation="base_set" value="7"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="2.3"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="DamageEntity" target="self" damage_type="health" amount="20"/>
+                <display_value name="dStatStunEffect" value="2"/>
+            </effect_group>
+        </item>
+
+        <!-- ESCOPETA BERRETA -->
+        <item name="gunEscopetaBerreta">
+
+            <property name="Extends" value="gunShotgunT0PipeShotgun"/>
+            <property name="CustomIcon" value="EscopetaTrucha"/>
+            <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/DoubleBarrelShotgun/doubleBarrelShotgunPrefab.prefab"/>
+            <property name="EconomicValue" value="150"/>
+            <property name="ShowQuality" value="false"/>
+            <property name="QualityMin" value="1"/>
+            <property name="QualityMax" value="1"/>
+
+            <property_class name="Action0">
+                <property name="Magazine_items" value="ammoShotgunShell"/>
+            </property_class>
+
+            <effect_group name="gunEscopetaBerreta">
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="100" tags="perkBoomstick"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="5"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="2" tags="perkBoomstick"/>
+                <passive_effect name="EntityDamage" operation="base_add" value="8" tags="perkBoomstick"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="100" tags="perkBoomstick"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="2.2"/>
+                <display_value name="dStatStunEffect" value="4"/>
+            </effect_group>
+        </item>
+
+        <!-- CAÑON VILLERO -->
+        <item name="gunCanonVillero">
+            <property name="Extends" value="gunExplosivesT3RocketLauncher"/>
+            <property name="CustomIcon" value="CannonVillero"/>
+            <property name="EconomicValue" value="250"/>
+            <property name="RepairTools" value="resourceMetalPipe"/>
+            <property name="ShowQuality" value="false"/>
+            <property name="QualityMin" value="1"/>
+            <property name="QualityMax" value="1"/>
+            <property name="TintColor" value="40, 110, 60"/>
+
+            <property class="Action0">
+                <property name="Class" value="Launcher"/>
+                <property name="Magazine_items" value="ammoGarrafa,ammoRocketHE,ammoRocketFrag"/>
+                <property name="Reload_time" value="3"/>
+            </property>
+
+            <effect_group name="gunCanonVillero">
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="35"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="1"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="77"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="3"/>
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+                <passive_effect name="WeaponHandling" operation="base_set" value="2"/>
+            </effect_group>
+        </item>
+
+        <!-- ROMPE PORTON -->
+        <item name="thrownRompePorton">
+            <property name="Extends" value="thrownTimedCharge"/>
+            <property name="CustomIcon" value="RompePorton"/>
+            <property name="HoldType" value="25"/>
+            <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/PipeBomb/PipeBombPrefab.prefab"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="TintColor" value="230, 40, 30"/>
+            <property name="EconomicValue" value="70"/>
+
+            <property_class name="Explosion">
+                <property name="BlockDamage" value="777"/>
+                <property name="EntityDamage" value="77"/>
+                <property name="RadiusBlocks" value="2"/>
+                <property name="RadiusEntities" value="2"/>
+            </property_class>
+
+            <property name="FuseTime" value="2"/>
+
+            <effect_group tiered="false">
+                <display_value name="dExRadius" value="2"/>
+                <display_value name="dExBlockDamage" value="777"/>
+                <display_value name="dExEntityDamage" value="77"/>
+                <display_value name="dFuseTime" value="2"/>
+            </effect_group>
+        </item>
+
+        <!-- ==================== MUNICIONES ==================== -->
+
+        <!-- BALAS TRUCHAS -->
+        <item name="ammoBalasTruchas">
+            <property name="Tags" value="ammo,scrap100"/>
+            <property name="DisplayType" value="ammoBullet"/>
+            <property name="HoldType" value="45"/>
+            <property name="CustomIcon" value="BalasTruchas"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mlead_scrap"/>
+            <property name="Stacknumber" value="777"/>
+            <property name="EconomicValue" value="2"/>
+            <property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+            <property name="SoundPickup" value="bullets_grab"/>
+            <property name="SoundPlace" value="bullets_place"/>
+
+            <effect_group name="ammoBalasTruchas" tiered="false">
+                <passive_effect name="EntityDamage" operation="base_set" value="15"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="4"/>
+                <passive_effect name="RoundRayCount" operation="base_set" value="7"/>
+                <passive_effect name="MaxRange" operation="base_set" value="15"/>
+                <passive_effect name="DamageFalloffRange" operation="base_set" value="12"/>
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+            </effect_group>
+        </item>
+
+        <!-- GARRAFA -->
+        <item name="ammoGarrafa">
+            <property name="Extends" value="ammoRocketHE"/>
+            <property name="CustomIcon" value="Garrafa"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="40"/>
+
+            <property class="Action1">
+                <property name="Class" value="Projectile"/>
+                <property class="Explosion">
+                    <property name="BlockDamage" value="777"/>
+                    <property name="EntityDamage" value="177"/>
+                    <property name="RadiusBlocks" value="2"/>
+                    <property name="RadiusEntities" value="2"/>
+                </property>
+                <property name="Gravity" value="-3"/>
+                <property name="FlyTime" value=".8"/>
+                <property name="LifeTime" value="7"/>
+                <property name="DeadTime" value="4"/>
+            </property>
+
+            <effect_group name="ammoGarrafa" tiered="false">
+                <passive_effect name="BlockDamage" operation="base_set" value="30"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="15"/>
+                <passive_effect name="ProjectileVelocity" operation="base_set" value="25"/>
+                <display_value name="dExRadius" value="2"/>
+                <display_value name="dExBlockDamage" value="777"/>
+                <display_value name="dExEntityDamage" value="177"/>
+            </effect_group>
+        </item>
+
+        <!-- ==================== ARMAS BLANCAS Y DEMAS ==================== -->
+
+        <!-- ESPADA CROTA -->
+        <item name="meleeEspadaCrota">
+            <property name="Extends" value="meleeWpnBladeT3Machete"/>
+            <property name="CustomIcon" value="EspadaTrucha"/>
+            <property name="ShowQuality" value="false"/>
+            <property name="RepairTools" value=""/>
+            <property name="HoldType" value="47"/>
+            <property name="EconomicValue" value="90"/>
+            <property name="DegradationBreaksAfter" value="true"/>
+
+            <effect_group>
+                <passive_effect name="EntityDamage" operation="base_set" value="12"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="14"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="92"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="3"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="110"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="7" tags="primary"/>
+
+                <!-- Sangrados -->
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedWeak"/>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedMedium"/>
+            </effect_group>
+
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="base_set" value="21" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="13" tags="secondary"/>
+            </effect_group>
+        </item>
+
+        <!-- FACÓN GAUCHO -->
+        <item name="meleeFaconGaucho">
+            <property name="Extends" value="meleeWpnBladeT1HuntingKnife"/>
+            <property name="CustomIcon" value="FaconGaucho"/>
+            <property name="ShowQuality" value="true"/>
+            <property name="RepairTools" value="resourcePiedraAfilar"/>
+            <property name="TintColor" value="240, 240, 250"/>
+            <property name="EconomicValue" value="90"/>
+
+            <effect_group>
+                <passive_effect name="EntityDamage" operation="base_set" value="26"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="26"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="84"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="17" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="110"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+
+                <!-- Sangrados -->
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedMedium"/>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedHard"/>
+            </effect_group>
+
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="base_set" value="46" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="27" tags="secondary"/>
+            </effect_group>
+        </item>
+
+        <!-- HIGHLANDER -->
+        <item name="meleeHighlander">
+            <property name="Extends" value="meleeWpnSpearT3SteelSpear"/>
+            <property name="CustomIcon" value="Highlander"/>
+            <property name="ShowQuality" value="true"/>
+            <property name="RepairTools" value="resourcePiedraAfilar"/>
+            <property name="TintColor" value="200, 210, 225"/>
+            <property name="EconomicValue" value="90"/>
+
+            <effect_group>
+                <passive_effect name="EntityDamage" operation="base_set" value="35"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="30"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="25" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="200"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedHard"/>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffVilleroBleedReHard"/>
+            </effect_group>
+
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="base_set" value="70" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="32" tags="secondary"/>
+            </effect_group>
+        </item>
+
+        <!-- PIEDRA DE AFILAR -->
+        <item name="resourcePiedraAfilar">
+            <property name="Extends" value="resourceRockSmall"/>
+            <property name="CustomIcon" value="PiedraDeAfilar"/>
+            <property name="EconomicValue" value="100"/>
+            <property name="Stacknumber" value="7"/>
+        </item>
+
+        <!-- ==================== CONSUMIBLES ==================== -->
+
+        <!-- PACO -->
+        <item name="drugPaco">
+            <property name="Extends" value="drinkJarBoiledWater"/>
+            <property name="CustomIcon" value="PacoPipa"/>
+            <property name="HoldType" value="31"/>
+            <property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="50"/>
+
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPacoHigh"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPacoWithdrawal"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPacoTrip"/>
+                <display_value name="Duration" value="120"/>
+            </effect_group>
+        </item>
+
+        <!-- MATE COCIDO -->
+        <item name="drinkMateCocido">
+            <property name="Extends" value="drinkJarCoffee"/>
+            <property name="CustomIcon" value="MateCocido"/>
+            <property name="Meshfile" value="@:Other/Items/Food/masonJarYuccaJuicePrefab.prefab"/>
+            <property name="Stacknumber" value="7"/>
+            <property name="EconomicValue" value="25"/>
+            <property name="DisplayType" value="Water"/>
+
+            <effect_group tiered="false">
+                
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="30"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".staminaDrain" operation="add" value="-15"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffPacoHigh"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffPacoWithdrawal"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="self" buff="buffPacoTrip"/>
+            </effect_group>
+        </item>
+
+
+        <!-- THOMPSON -->
+        <item name="gunThompson777">
+            <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
+            <property name="DisplayType" value="rangedGun"/>
+            <property name="HoldType" value="6"/>
+            <property name="CustomIcon" value="ThompsonSMG"/>
+            <property name="Meshfile" value="#@modfolder:Resources/ThompsonM1.unity3d?Thompson.Prefab"/>
+            <property name="Material" value="MHandGunParts"/>
+            <property name="Weight" value="7"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="DegradationBreaksAfter" value="false"/>
+            <property name="SoundJammed" value="weapon_jam"/>
+            <property name="Attachments" value="meleeToolFlashlight02"/>
+            <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+            <property name="EconomicValue" value="4500"/>
+            <property name="UnlockedBy" value="craftingHandguns"/>
+            <property name="ShowQuality" value="true"/>
+            <property name="CrosshairOnAim" value="true"/>
+            <property name="CrosshairUpAfterShot" value="true"/>
+
+            <property_class name="Action0">
+                <property name="Class" value="Ranged"/>
+                <property name="Delay" value=".150"/>
+                <property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+                <property name="Reload_time" value="4.1"/>
+                <property name="Sound_start" value="thompson777_fire"/>
+                <property name="Sound_loop" value="thompson777_fire"/>
+                <property name="Sound_end" value="smg_fire_end"/>
+                <property name="Sound_empty" value="dryfire"/>
+                <property name="AutoReload" value="false"/>
+                <property name="Particles_muzzle_fire" value="gunfire_MG_SMG"/>
+            </property_class>
+
+            <property_class name="Action1">
+                <property name="Class" value="Zoom"/>
+                <property name="Zoom_max_out" value="55"/>
+                <property name="Zoom_max_in" value="55"/>
+                <property name="SightsCameraOffset" value="-.0003,.001,-.01"/>
+                <property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+                <property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
+            </property_class>
+
+            <stats>
+                <stat name="EntityDamage" value="0,0,1,0,.1"/>
+                <stat name="MagazineSize" value="0,0,1,0,.1"/>
+                <stat name="RoundsPerMinute" value="0,0,1,0,.02"/>
+                <stat name="DamageFalloffRange" value="0,0,1,0,.1"/>
+                <stat name="DegradationMax" value="0,0,1,0,.1"/>
+            </stats>
+
+            <effect_group name="gunThompson777">
+                <passive_effect name="RoundsPerMinute" operation="base_set" value="800"/>
+                <passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+                <passive_effect name="MagazineSize" operation="base_set" value="27"/>
+                <passive_effect name="EntityDamage" operation="base_add" value="24"/>
+                <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.3"/>
+                <passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="500"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value=".5"/>
+                <passive_effect name="MaxRange" operation="base_set" value="70"/>
+                <passive_effect name="DamageFalloffRange" operation="base_set" value="35"/>
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3"/>
+                <passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35"/>
+                <passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+                <passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+                <passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+                <passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".5"/>
+                <passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1"/>
+                <passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3"/>
+                <passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".3"/>
+            </effect_group>
+        </item>
+
+    </append>
+</configs>

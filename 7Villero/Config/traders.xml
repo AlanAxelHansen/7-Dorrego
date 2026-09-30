@@ -1,0 +1,26 @@
+<configs>
+
+    <!-- ==================== 1) DISTANCIA GLOBALES(TODOS LOS TRADERS) ==================== -->
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+        <item name="gunBersa" quality="1,6" prob="0.30"/>
+        <item name="gunHalcon" quality="1,6" prob="0.25"/>
+        <item name="gunFAL" quality="1,6" prob="0.20"/>
+        <item name="gunThompson777" quality="1,6" prob="0.18"/>
+    </append>
+
+    <!-- ==================== 2) ARMAS BLANCAS GLOBALES(TODOS LOS TRADERS) ==================== -->
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+        <item name="meleeFaconGaucho" quality="1,6" prob="0.25"/>
+        <item name="meleeHighlander" quality="1,6" prob="0.15"/>
+        <item name="resourcePiedraAfilar" count="1,3" prob="0.35"/>
+    </append>
+
+    <!-- ==================== 3) TRADE HUG(ARMAS PESADAS) ==================== -->
+    <append xpath="/traders/trader_info[@id='7']/trader_items[1]">
+        <item name="gunBersa" count="1" quality="1,6" prob="0.20"/>
+        <item name="gunHalcon" count="1" quality="1,6" prob="0.20"/>
+        <item name="gunFAL" count="1" quality="1,6" prob="0.25"/>
+        <item name="gunThompson777" count="1" quality="1,6" prob="0.20"/>
+    </append>
+
+</configs>

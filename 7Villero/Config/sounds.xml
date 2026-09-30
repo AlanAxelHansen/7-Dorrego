@@ -1,0 +1,17 @@
+<configs>
+    <append xpath="/Sounds">
+
+        <!-- THOMPSON-->
+        <SoundDataNode name="thompson777_fire">
+            <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/>
+            <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+
+            <Noise ID="0" noise="52" time="2"/>
+
+            <AudioClip ClipName="@:Sounds/Weapons/Ranged/DesertVulture/desertvulture_fire1.wav"/>
+            <AudioClip ClipName="@:Sounds/Weapons/Ranged/DesertVulture/desertvulture_fire2.wav"/>
+            <AudioClip ClipName="@:Sounds/Weapons/Ranged/DesertVulture/desertvulture_fire3.wav"/>
+        </SoundDataNode>
+
+    </append>
+</configs>

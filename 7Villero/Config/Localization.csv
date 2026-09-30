@@ -1,0 +1,47 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,context / alternate interpretations,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+gunHalcon,items,Item,false,,Halcón SMG,,,Subfusil Halcón,,,,,,,,,,,Subfusil Halcón
+gunHalconDesc,items,Item,false,,Halcón SMG Description,,,"Subfusil de diseño nacional argentino. Su cadencia moderada y sólida construcción ofrecen gran estabilidad y poder de fuego a media distancia.",,,,,,,,,,,Viejo subfusil argentino de calibre 9mm. Robusto, pesado y confiable.
+gunBersa,items,Item,false,,Bersa Pistol,,,Pistola Bersa,,,,,,,,,,,Pistola Bersa
+gunBersaDesc,items,Item,false,,Bersa Pistol Description,,,"Pistola estándar calibre 9mm. Aunque cuenta con menor capacidad de cargador que otras armas de su tipo, lo compensa con mayor precisión y daño por impacto.",,,,,,,,,,,Pistola semiautomática argentina, confiable y de buen poder de frenado.
+gunFAL,items,Item,false,,FAL Battle Rifle,,,Fusil FAL,,,,,,,,,,,Fusil FAL
+gunFALDesc,items,Item,false,,FAL Battle Rifle Description,,,"Fusil de asalto reglamentario argentino. Su retroceso es feroz pero su capacidad de frenado y alcance efectivo son demoledores.",,,,,,,,,,,Fusil militar pesado de calibre 7.62mm. Devastador a larga distancia.
+gunThompson777,items,Item,false,,Thompson .44 Submachine Gun,,,Subfusil Thompson .44,,,,,,,,,,,Subfusil Thompson .44
+gunThompson777Desc,items,Item,false,,Thompson .44 Submachine Gun Description,,,"Arma de combate cercano modificada para disparar proyectiles .44 Magnum a altísima cadencia. Capaz de arrasar hordas en segundos.",,,,,,,,,,,Subfusil clásico recamarado para munición pesada .44 Magnum.
+gunTumbera777,items,Item,false,,Handmade Pipe Shotgun,,,Tumbera 777,,,,,,,,,,,Tumbera 777
+gunTumbera777Desc,items,Item,false,,Handmade Pipe Shotgun Description,,,"Arma de fuego precaria fabricada con caños de gas y madera. Su retroceso brusco lastima levemente al usuario, pero es letal a quemarropa.",,,,,,,,,,,Escopeta rústica tumbera de un solo tiro. Despide plomo y patea fuerte.
+gunEscopetaBerreta,items,Item,false,,Sawed-off Berreta Shotgun,,,Escopeta Berreta,,,,,,,,,,,Escopeta Berreta
+gunEscopetaBerretaDesc,items,Item,false,,Sawed-off Berreta Shotgun Description,,,"Versión rústica de escopeta doble caño ensamblada con piezas de desguace. Inflige gran aturdimiento en combate cerrado.",,,,,,,,,,,Escopeta casera de dos caños recortados.
+gunCanonVillero,items,Item,false,,Villero Cannon,,,Cañón Villero,,,,,,,,,,,Cañón Villero
+gunCanonVilleroDesc,items,Item,false,,Villero Cannon Description,,,"Artillería casera de gran calibre. Requiere caños gruesos y dispara garrafas cargadas con pólvora para demoler estructuras y grupos densos.",,,,,,,,,,,Lanzador pesado improvisado para disparar garrafas presurizadas.
+thrownRompePorton,items,Item,false,,Rompe Portón Explosive,,,Rompe Portón,,,,,,,,,,,Rompe Portón
+thrownRompePortonDesc,items,Item,false,,Rompe Portón Explosive Description,,,"Bomba casera de mecha corta diseñada para reventar puertas blindadas y defensas estructurales.",,,,,,,,,,,Potente artefacto pirotécnico/explosivo para demolición.
+ammoBalasTruchas,items,Item,false,,Handmade Trucha Bullets,,,Balas Truchas,,,,,,,,,,,Balas Truchas
+ammoBalasTruchasDesc,items,Item,false,,Handmade Trucha Bullets Description,,,"Munición casera cargada con restos de papel y metralla de plomo. Ideal para abastecer tumberas de bajo coste.",,,,,,,,,,,Cartuchos artesanales de perdigones de plomo.
+ammoGarrafa,items,Item,false,,Propane Tank Projectile,,,Garrafa de Gas,,,,,,,,,,,Garrafa de Gas
+ammoGarrafaDesc,items,Item,false,,Propane Tank Projectile Description,,,"Cilindro metálico de gas comprimido con carga explosiva. Genera un impacto demoledor contra estructuras y grupos de zombis.",,,,,,,,,,,Garrafa presurizada y modificada para ser disparada con cañón.
+meleeEspadaCrota,items,Item,false,,Crota Scrap Sword,,,Espada Crota,,,,,,,,,,,Espada Crota
+meleeEspadaCrotaDesc,items,Item,false,,Crota Scrap Sword Description,,,"Arma cortante descartable hecha con restos de metal y mango vendado. Causa desgarros y sangrados rápidos al impactar.",,,,,,,,,,,Machete/espada improvisada de chatarra con filo irregular.
+meleeFaconGaucho,items,Item,false,,Gaucho Facón Knife,,,Facón Gaucho,,,,,,,,,,,Facón Gaucho
+meleeFaconGauchoDesc,items,Item,false,,Gaucho Facón Knife Description,,,"Arma blanca emblemática de gran precisión. Sus estocadas provocan hemorragias severas y puede repararse con piedra de afilar.",,,,,,,,,,,Cuchillo criollo tradicional de hoja forjada larga y afilada.
+meleeHighlander,items,Item,false,,Highlander Greatsword,,,Highlander,,,,,,,,,,,Highlander
+meleeHighlanderDesc,items,Item,false,,Highlander Greatsword Description,,,"Hoja pesada de doble filo capaz de mantener a raya a varios enemigos a la vez e infligir cortes profundos de sangrado extremo.",,,,,,,,,,,Espadón largo de acero con tremendo alcance y poder de corte.
+resourcePiedraAfilar,items,Item,false,,Whetstone,,,Piedra de Afilar,,,,,,,,,,,Piedra de Afilar
+resourcePiedraAfilarDesc,items,Item,false,,Whetstone Description,,,"Herramienta rústica indispensable para reparar cuchillos criollos y hojas de combate sin degradar su estructura.",,,,,,,,,,,Piedra abrasiva para asentar y reparar filos desgastados.
+drugPaco,items,Item,false,,Paco,,,Paco,,,,,,,,,,,Paco
+drugPacoDesc,items,Item,false,,Paco Description,,,"Sustancia marginal que otorga una explosión momentánea de energía, velocidad y daño, pero deja un bajón severo al disiparse.",,,,,,,,,,,Compuesto residual altamente adictivo y destructivo.
+drinkMateCocido,items,Item,false,,Mate Cocido,,,Mate Cocido,,,,,,,,,,,Mate Cocido
+drinkMateCocidoDesc,items,Item,false,,Mate Cocido Description,,,"Bebida tradicional reconstituyente que hidrata, calma la fatiga y limpia de raíz los efectos adversos y viajes provocados por sustancias.",,,,,,,,,,,Infusión caliente de yerba mate.
+buffPacoHighName,buffs,Buff,false,,Paco Rush,,,Subidón de Paco,,,,,,,,,,,Subidón de Paco
+buffPacoHighDesc,buffs,Buff,false,,"Massive boost in stamina and movement speed.",,,"Gran incremento temporal de velocidad, daño y resistencia.",,,,,,,,,,,Gran incremento temporal de velocidad, daño y resistencia.
+buffPacoWithdrawalName,buffs,Buff,false,,Paco Crash,,,Bajón de Paco,,,,,,,,,,,Bajón de Paco
+buffPacoWithdrawalDesc,buffs,Buff,false,,"Severe penalty to stamina regen, movement speed and strength.",,,"Fatiga extrema y penalización general tras el consumo de paco.",,,,,,,,,,,Fatiga extrema y penalización general tras el consumo de paco.
+buffPacoTripName,buffs,Buff,false,,Paco Hallucination,,,Viaje de Paco,,,,,,,,,,,Viaje de Paco
+buffPacoTripDesc,buffs,Buff,false,,"Distorted vision and erratic perception.",,,"Distorsión visual provocada por los químicos del paco.",,,,,,,,,,,Distorsión visual provocada por los químicos del paco.
+buffVilleroBleedWeakName,buffs,Buff,false,,Minor Bleed,,,Corte Rústico,,,,,,,,,,,Corte Rústico
+buffVilleroBleedWeakDesc,buffs,Buff,false,,"Target loses 2 HP per second.",,,"La víctima sangra perdiendo 2 de vida por segundo.",,,,,,,,,,,La víctima sangra perdiendo 2 de vida por segundo.
+buffVilleroBleedMediumName,buffs,Buff,false,,Deep Bleed,,,Sangrado Profundo,,,,,,,,,,,Sangrado Profundo
+buffVilleroBleedMediumDesc,buffs,Buff,false,,"Target loses 5 HP per second.",,,"La víctima sangra perdiendo 5 de vida por segundo.",,,,,,,,,,,La víctima sangra perdiendo 5 de vida por segundo.
+buffVilleroBleedHardName,buffs,Buff,false,,Severe Hemorrhage,,,Hemorragia Severa,,,,,,,,,,,Hemorragia Severa
+buffVilleroBleedHardDesc,buffs,Buff,false,,"Target loses 15 HP per second.",,,"Corte lacerante que drena 15 de vida por segundo.",,,,,,,,,,,Corte lacerante que drena 15 de vida por segundo.
+buffVilleroBleedReHardName,buffs,Buff,false,,Fatal Laceration,,,Desgarro Crítico,,,,,,,,,,,Desgarro Crítico
+buffVilleroBleedReHardDesc,buffs,Buff,false,,"Target loses 30 HP per second.",,,"Herida crítica que destruye el tejido y desangra rápidamente al objetivo.",,,,,,,,,,,Herida crítica que destruye el tejido y desangra rápidamente al objetivo.

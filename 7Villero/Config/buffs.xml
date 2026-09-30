@@ -1,0 +1,89 @@
+<configs>
+    <append xpath="/buffs">
+
+        <!-- ==================== PACO ==================== -->
+
+        <!-- BUFF -->
+        <buff name="buffPacoHigh" name_key="buffPacoHighName" description_key="buffPacoHighDesc" icon="ui_game_symbol_speed">
+            <duration value="45"/>
+            <stack_type value="replace"/>
+
+            <effect_group>
+                <passive_effect name="StaminaChangeOT" operation="perc_add" value="1.7"/>
+                <passive_effect name="RunSpeed" operation="perc_add" value="2.1"/>
+                <passive_effect name="WalkSpeed" operation="perc_add" value="2.1"/>
+                <passive_effect name="EntityDamage" operation="perc_add" value="2.35"/>
+                <passive_effect name="JumpStrength" operation="perc_add" value="2"/>
+
+                <!-- Trigger de abstinencia -->
+                <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPacoWithdrawal"/>
+            </effect_group>
+        </buff>
+
+        <!-- NERF -->
+        <buff name="buffPacoWithdrawal" name_key="buffPacoWithdrawalName" description_key="buffPacoWithdrawalDesc" icon="ui_game_symbol_near_death_trauma">
+            <duration value="7200"/>
+            <stack_type value="replace"/>
+
+            <effect_group>
+                <passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.5"/>
+                <passive_effect name="RunSpeed" operation="perc_subtract" value="0.5"/>
+                <passive_effect name="WalkSpeed" operation="perc_subtract" value="0.35"/>
+                <passive_effect name="EntityDamage" operation="perc_subtract" value="0.35"/>
+                <passive_effect name="JumpStrength" operation="perc_subtract" value="0.25"/>
+            </effect_group>
+        </buff>
+
+        <!-- ESTADO -->
+        <buff name="buffPacoTrip" name_key="buffPacoTripName" description_key="buffPacoTripDesc" icon="ui_game_symbol_stealth">
+            <duration value="45"/>
+            <stack_type value="replace"/>
+            <damage_type value="disease"/>
+
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1.5" effect_name="Drunk"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="1.5" effect_name="Drunk"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
+            </effect_group>
+        </buff>
+
+        <!-- ==================== SANGRADOS ==================== -->
+
+        <!-- SANGRADO DEBIL -->
+        <buff name="buffVilleroBleedWeak" name_key="buffVilleroBleedWeakName" description_key="buffVilleroBleedWeakDesc" icon="ui_game_symbol_blood">
+            <duration value="2"/>
+            <stack_type value="replace"/>
+            <effect_group>
+                <passive_effect name="HealthChangeOT" operation="base_subtract" value="2"/>
+            </effect_group>
+        </buff>
+
+        <!-- SANGRADO MEDIO -->
+        <buff name="buffVilleroBleedMedium" name_key="buffVilleroBleedMediumName" description_key="buffVilleroBleedMediumDesc" icon="ui_game_symbol_blood">
+            <duration value="5"/>
+            <stack_type value="replace"/>
+            <effect_group>
+                <passive_effect name="HealthChangeOT" operation="base_subtract" value="5"/>
+            </effect_group>
+        </buff>
+
+        <!-- SANGRADO FUERTE -->
+        <buff name="buffVilleroBleedHard" name_key="buffVilleroBleedHardName" description_key="buffVilleroBleedHardDesc" icon="ui_game_symbol_blood">
+            <duration value="5"/>
+            <stack_type value="replace"/>
+            <effect_group>
+                <passive_effect name="HealthChangeOT" operation="base_subtract" value="15"/>
+            </effect_group>
+        </buff>
+
+        <!-- SANGRADO RE FUERTE -->
+        <buff name="buffVilleroBleedReHard" name_key="buffVilleroBleedReHardName" description_key="buffVilleroBleedReHardDesc" icon="ui_game_symbol_blood">
+            <duration value="5"/>
+            <stack_type value="replace"/>
+            <effect_group>
+                <passive_effect name="HealthChangeOT" operation="base_subtract" value="30"/>
+            </effect_group>
+        </buff>
+
+    </append>
+</configs>

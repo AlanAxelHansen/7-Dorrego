@@ -1,0 +1,115 @@
+<configs>
+    <append xpath="/buffs">
+
+        <!-- Buff Tortilla de Dorrego -->
+        <buff name="buffFoodTortillaDorrego" name_key="Tortilla de Dorrego" icon="ui_game_symbol_hunger">
+            <stack_type value="replace"/>
+            <duration value="30"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="1.5"/>
+                <passive_effect name="WaterChangeOT" operation="base_add" value="0.5"/>
+                <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1"/>
+            </effect_group>
+        </buff>
+
+        <!-- Buff Tortilla del Pibe -->
+        <buff name="buffFoodTortillaDelPibe" name_key="Tortilla del Pibe" icon="ui_game_symbol_hunger">
+            <stack_type value="replace"/>
+            <duration value="30"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="2.5"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyStat" stat="Water" operation="subtract" value="20"/>
+            </effect_group>
+        </buff>
+
+        <!-- Buff Pizza Alan -->
+        <buff name="buffFoodPizzaCasera" name_key="Pizza Casera" icon="ui_game_symbol_hunger">
+            <stack_type value="replace"/>
+            <duration value="30"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="1.0"/>
+                <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1"/>
+            </effect_group>
+        </buff>
+
+        <!-- Buff Guiso Blanco -->
+        <buff name="buffFoodGuisoBlanco" name_key="Guiso Blanco" icon="ui_game_symbol_hunger">
+            <stack_type value="replace"/>
+            <duration value="30"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="1.33"/>
+                <passive_effect name="WaterChangeOT" operation="base_add" value="0.33"/>
+                <passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+            </effect_group>
+        </buff>
+
+        <!-- Buff Pollo al Disco -->
+        <buff name="buffFoodPolloAlDisco" name_key="Pollo al Disco" icon="ui_game_symbol_hunger">
+            <stack_type value="replace"/>
+            <duration value="300"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="0.2"/>
+                <passive_effect name="WaterChangeOT" operation="base_add" value="0.033"/>
+                <passive_effect name="EntityDamage" operation="perc_add" value="0.15" tags="melee"/>
+            </effect_group>
+        </buff>
+
+        <!-- Buff Budín -->
+        <buff name="buffFoodBudinFristelser" name_key="Budín Fristelser" icon="ui_game_symbol_agility">
+            <stack_type value="replace"/>
+            <duration value="180"/>
+            <effect_group>
+                <passive_effect name="FoodChangeOT" operation="base_add" value="0.5"/>
+                <passive_effect name="RunSpeed" operation="perc_add" value="0.2"/>
+                <passive_effect name="WalkSpeed" operation="perc_add" value="0.2"/>
+            </effect_group>
+        </buff>
+
+        <!-- CRACK: BUFF -->
+        <buff name="buffCrackHigh" name_key="Efecto Crack" icon="ui_game_symbol_mining">
+            <stack_type value="replace"/>
+            <duration value="180"/>
+            <effect_group>
+                <passive_effect name="HarvestCount" operation="perc_add" value="0.6"/>
+                
+                <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffCrackHangover"/>
+            </effect_group>
+        </buff>
+
+        <!-- CRACK: ABSTINENCIA -->
+        <buff name="buffCrackHangover" name_key="Bajón de Crack" icon="ui_game_symbol_water">
+            <stack_type value="replace"/>
+            <duration value="5"/>
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyStat" stat="Water" operation="subtract" value="30"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyStat" stat="Health" operation="subtract" value="25"/>
+            </effect_group>
+        </buff>
+
+        <!-- COCA: BUFF -->
+        <buff name="buffCocaHigh" name_key="Efecto Coca" icon="ui_game_symbol_run">
+            <stack_type value="replace"/>
+            <duration value="120"/>
+            <effect_group>
+                <passive_effect name="RunSpeed" operation="perc_add" value="0.7"/>
+                <passive_effect name="WalkSpeed" operation="perc_add" value="0.7"/>
+                <passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+                <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.3"/>
+                
+                <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffCocaCrash"/>
+            </effect_group>
+        </buff>
+
+        <!-- COCA: ABSTINENCIA -->
+        <buff name="buffCocaCrash" name_key="Agotamiento Cardíaco" icon="ui_game_symbol_stamina">
+            <stack_type value="replace"/>
+            <duration value="180"/>
+            <effect_group>
+                <passive_effect name="RunSpeed" operation="perc_add" value="-0.4"/>
+                <passive_effect name="WalkSpeed" operation="perc_add" value="-0.2"/>
+                <passive_effect name="StaminaChangeOT" operation="perc_add" value="-0.6"/>
+            </effect_group>
+        </buff>
+
+    </append>
+</configs>
